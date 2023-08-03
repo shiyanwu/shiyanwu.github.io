@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://shiyanwu.github.io/freebyte/tags/java8-lambda/"/>
+  
+  <link rel="canonical" href="https://shiyanwu.github.io/freebyte/2023/08/03/10.java8-类型推断/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：Java8 Lambda - freebyte</title>
-  <meta name="keywords" content="null">
+  <title>Java8 类型推断 - freebyte</title>
+  <meta name="keywords" content="Java8,null">
   <meta desc name="description" content="自由处在！ - 莱羊 - freebyte">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="freebyte">
-<meta property="og:url" content="https://shiyanwu.github.io/freebyte/tags/Java8-Lambda/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java8 类型推断">
+<meta property="og:url" content="https://shiyanwu.github.io/freebyte/2023/08/03/10.Java8-%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD/index.html">
 <meta property="og:site_name" content="freebyte">
-<meta property="og:description" content="自由处在！">
+<meta property="og:description" content="类型推断1. 先来说说泛型泛型是Java SE1.5的新特性，泛型的本质是参数化类型，也就是说所操作的数据类型被指定为一个参数。通俗点将就是“类型的变量”。这种类型变量可以用在类、接口和方法的创建中。理解Java泛型最简单的方法是把它看成一种便捷语法，能节省你某些Java类型转换(casting)上的操作： 123List&lt;Apple&gt; box &#x3D; new ArrayList&lt;A">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-08-03T10:34:40.000Z">
+<meta property="article:modified_time" content="2023-08-03T06:40:35.772Z">
 <meta property="article:author" content="莱羊">
+<meta property="article:tag" content="Java8">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2630,7 +2633,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2678,25 +2681,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://shiyanwu.github.io/freebyte/2023/08/03/2.Java8-Lambda/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://shiyanwu.github.io/freebyte/2023/08/03/10.Java8-类型推断/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="freebyte">
   </span>
@@ -2705,72 +2692,197 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="自由处在！">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/03/2.Java8-Lambda/"  itemprop="url">
-        java8 Lambda
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      <h2 id="Java8-Lambda表达式"><a href="#Java8-Lambda表达式" class="headerlink" title="Java8-Lambda表达式"></a>Java8-Lambda表达式</h2><h3 id="1-Lambda表达式的使用"><a href="#1-Lambda表达式的使用" class="headerlink" title="1. Lambda表达式的使用"></a>1. Lambda表达式的使用</h3><p>Lambda表达式（也称为闭包）是Java 8中最大和最令人期待的语言改变。它允许我们将函数当成参数传递给某个方法，或者把代码本身当作数据处理：函数式开发者非常熟悉这些概念。很多JVM平台上的语言（Groovy、Scala等）从诞生之日就支持Lambda表达式，但是Java开发者没有选择，只能使用匿名内部类代替Lambda表达式。</p>
+    
+      <h1 class="title" itemprop="name headline">
+        Java8 类型推断
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">莱羊</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Java8%E6%96%B0%E7%89%B9%E6%80%A7/">Java8新特性</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Java8%E6%96%B0%E7%89%B9%E6%80%A7/" itemprop="url"><span itemprop="name">Java8新特性</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png">
-            <meta itemprop="name" content="莱羊">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-03T18:34:40+08:00">2023-08-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java8%E6%96%B0%E7%89%B9%E6%80%A7/">Java8新特性</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Java8%E6%96%B0%E7%89%B9%E6%80%A7/" itemprop="url"><span itemprop="name">Java8新特性</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-03T18:34:40+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年8月3日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：969 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：3 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="类型推断"><a href="#类型推断" class="headerlink" title="类型推断"></a>类型推断</h2><h3 id="1-先来说说泛型"><a href="#1-先来说说泛型" class="headerlink" title="1. 先来说说泛型"></a>1. 先来说说泛型</h3><p>泛型是Java SE1.5的新特性，泛型的本质是参数化类型，也就是说所操作的数据类型被指定为一个参数。通俗点将就是“类型的变量”。这种类型变量可以用在类、接口和方法的创建中。<br>理解Java泛型最简单的方法是把它看成一种便捷语法，能节省你某些Java类型转换(casting)上的操作：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">List&lt;Apple&gt; box = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;Apple&gt;();</span><br><span class="line">box.add(<span class="keyword">new</span> <span class="title class_">Apple</span>());</span><br><span class="line"><span class="type">Apple</span> <span class="variable">apple</span> <span class="operator">=</span>box.get(<span class="number">0</span>);</span><br></pre></td></tr></table></figure>
+
+<p>这段上面的代码自身已表达的很清楚：box是一个装有Apple对象的List。get方法返回一个Apple对象实例，这个过程不需要进行类型转换。没有泛型，上面的代码需要写成这样：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Apple</span> <span class="variable">apple</span> <span class="operator">=</span> (Apple)box.get(<span class="number">0</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-泛型的尴尬"><a href="#2-泛型的尴尬" class="headerlink" title="2. 泛型的尴尬"></a>2. 泛型的尴尬</h3><p>泛型的最大优点是提供了程序的类型安全同时可以向后兼容，但也有尴尬的地方，就是每次定义时都要写明泛型的类型，这样显示指定不仅感觉有些冗长，最主要是很多时候不能够给出正确的类型参数，现在通过编译器自动推断泛型的参数类型，能够减少这样的情况，并提高代码可读性。</p>
+<h3 id="3-java7的泛型类型推断改进"><a href="#3-java7的泛型类型推断改进" class="headerlink" title="3. java7的泛型类型推断改进"></a>3. java7的泛型类型推断改进</h3><p>在以前的版本中使用泛型类型，需要在声明并赋值的时候，两侧都加上泛型类型。例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String, String&gt; myMap = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;String, String&gt;();</span><br></pre></td></tr></table></figure>
+
+<p>你可能觉得:在声明变量的的时候已经指明了参数类型，为什么还要在初始化对象时再指定？幸好，在Java SE 7中，这种方式得以改进，现在你可以使用如下语句进行声明并赋值：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String, String&gt; myMap = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;(); <span class="comment">//注意后面的&quot;&lt;&gt;&quot;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>在这条语句中，编译器会根据变量声明时的泛型类型自动推断出实例化HashMap时的泛型类型。再次提醒一定要注意new HashMap后面的“&lt;&gt;”，只有加上这个“&lt;&gt;”才表示是自动类型推断，否则就是非泛型类型的HashMap，并且在使用编译器编译源代码时会给出一个警告提示。<br>但是Java SE 7在创建泛型实例时的类型推断是有限制的：只有构造器的参数化类型在上下文中被显著的声明了，才可以使用类型推断，否则不行。例如：下面的例子在java 7无法正确编译（但现在在java8里面可以编译，因为根据方法参数来自动推断泛型的类型）：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">list.add(<span class="string">&quot;A&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//由于addAll期望获得Collection&lt;? extends String&gt;类型的参数，因此下面的语句无法通过</span></span><br><span class="line">list.addAll(<span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;());</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4-Java8的泛型类型推断改进"><a href="#4-Java8的泛型类型推断改进" class="headerlink" title="4.Java8的泛型类型推断改进"></a>4.Java8的泛型类型推断改进</h3><p>java8里面泛型的目标类型推断主要2个：</p>
+<ol>
+<li>支持通过方法上下文推断泛型目标类型</li>
+<li>支持在方法调用链路当中，泛型类型推断传递到最后一个方法</li>
+</ol>
+<p>让我们看看官网的例子</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">List</span>&lt;E&gt; &#123;</span><br><span class="line">    <span class="keyword">static</span> &lt;Z&gt; List&lt;Z&gt; <span class="title function_">nil</span><span class="params">()</span> &#123; ... &#125;;</span><br><span class="line">    <span class="keyword">static</span> &lt;Z&gt; List&lt;Z&gt; <span class="title function_">cons</span><span class="params">(Z head, List&lt;Z&gt; tail)</span> &#123; ... &#125;;</span><br><span class="line">    E <span class="title function_">head</span><span class="params">()</span> &#123; ... &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>根据JEP101的特性，我们在调用上面方法的时候可以这样写</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//通过方法赋值的目标参数来自动推断泛型的类型</span></span><br><span class="line">List&lt;String&gt; l = List.nil();</span><br><span class="line"></span><br><span class="line"><span class="comment">//而不是显示的指定类型</span></span><br><span class="line"><span class="comment">//List&lt;String&gt; l = List.&lt;String&gt;nil();</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//通过前面方法参数类型推断泛型的类型</span></span><br><span class="line">List.cons(<span class="number">42</span>, List.nil());</span><br><span class="line"></span><br><span class="line"><span class="comment">//而不是显示的指定类型</span></span><br><span class="line"><span class="comment">//List.cons(42, List.&lt;Integer&gt;nil());</span></span><br></pre></td></tr></table></figure>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2023/08/03/2.Java8-Lambda/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-03T14:40:35+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年8月3日</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
-    
-  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java8/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Java8</p></a></div>
+  <span hidden itemprop="keywords">Java8</span>
 
 
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
     
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2023/08/03/1.Java8-%E6%8E%A5%E5%8F%A3%E7%9A%84%E6%96%B0%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>java8 接口新的两种方法</p>
+          <p class='content'>Java8-接口新的两种方法java8 版之前，接口只有抽象方法，而在Java 8，为接口新增了两种类型的方法。 第一种是默认方法；第二种是静态方法。
+1. 默认方法默认方法使用了default...</p>
+        </a>
+      
+      
+        <a class='next' href='/2023/08/03/3.Java8-Optional/'>
+          <p class='title'>java8 Optional类<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Optional类Java 8在java.util包中新增了Optional类，Optional类是一个可以包含或不可以包含非空值的容器对象。每一个Java项目，最主要的重复语句就是检查空指针异...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2779,134 +2891,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">freebyte</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Java8%E6%96%B0%E7%89%B9%E6%80%A7/" href="/categories/Java8%E6%96%B0%E7%89%B9%E6%80%A7/"
-            active-action="action-categoriesJava8E696B0E789B9E680A7"
-            ><div class='name'>Java8新特性</div><div class='badge'>(12)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Java8/" style="font-size: 24px; color: #555">Java8</a> <a href="/tags/Java8-Lambda/" style="font-size: 14px; color: #999">Java8 Lambda</a> <a href="/tags/java8/" style="font-size: 14px; color: #999">java8</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD"><span class="toc-text">类型推断</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%85%88%E6%9D%A5%E8%AF%B4%E8%AF%B4%E6%B3%9B%E5%9E%8B"><span class="toc-text">1. 先来说说泛型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%B3%9B%E5%9E%8B%E7%9A%84%E5%B0%B4%E5%B0%AC"><span class="toc-text">2. 泛型的尴尬</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-java7%E7%9A%84%E6%B3%9B%E5%9E%8B%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E6%94%B9%E8%BF%9B"><span class="toc-text">3. java7的泛型类型推断改进</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Java8%E7%9A%84%E6%B3%9B%E5%9E%8B%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E6%94%B9%E8%BF%9B"><span class="toc-text">4.Java8的泛型类型推断改进</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2934,13 +2960,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -4082,7 +4109,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"freebyte","url":"https://shiyanwu.github.io/freebyte/","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"莱羊","image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://shiyanwu.github.io/freebyte/","sameAs":["https://github.com/shiyanwu"],"description":"自由处在！"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://shiyanwu.github.io/freebyte/","name":"freebyte"}},{"@type":"ListItem","position":2,"item":{"@id":"https://shiyanwu.github.io/freebyte/tags/Java8 Lambda/","name":"Java8 Lambda"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"freebyte","url":"https://shiyanwu.github.io/freebyte/","keywords":null,"description":"自由处在！","author":{"@type":"Person","name":"莱羊","image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://shiyanwu.github.io/freebyte/","description":"自由处在！"},"publisher":{"@type":"Organization","name":"freebyte","url":"https://shiyanwu.github.io/freebyte/","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://shiyanwu.github.io/freebyte?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"自由处在！","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"莱羊","image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://shiyanwu.github.io/freebyte/"},"publisher":{"@type":"Organization","name":"freebyte","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"freebyte","url":"https://shiyanwu.github.io/freebyte/","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"莱羊","image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://shiyanwu.github.io/freebyte/","sameAs":["https://github.com/shiyanwu"],"description":"自由处在！"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://shiyanwu.github.io/freebyte/","name":"freebyte"}},{"@type":"ListItem","position":2,"item":{"@id":"https://shiyanwu.github.io/freebyte/categories/Java8新特性/","name":"Java8新特性"}},{"@type":"ListItem","position":3,"item":{"@id":"https://shiyanwu.github.io/freebyte/2023/08/03/10.Java8-类型推断/","name":"Java8 类型推断"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"freebyte","url":"https://shiyanwu.github.io/freebyte/","keywords":null,"description":"自由处在！","author":{"@type":"Person","name":"莱羊","image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://shiyanwu.github.io/freebyte/","description":"自由处在！"},"publisher":{"@type":"Organization","name":"freebyte","url":"https://shiyanwu.github.io/freebyte/","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://shiyanwu.github.io/freebyte?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Java8 类型推断","description":"自由处在！","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://shiyanwu.github.io/freebyte/2023/08/03/10.Java8-%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD/"},"author":{"@type":"Person","name":"莱羊","image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://shiyanwu.github.io/freebyte/"},"publisher":{"@type":"Organization","name":"freebyte","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://shiyanwu.github.io/freebyte/2023/08/03/10.Java8-%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD/","wordCount":0,"datePublished":"2023-08-03T10:34:40.000Z","dateModified":"2023-08-03T06:40:35.772Z","articleSection":"Java8新特性","keywords":"Java8","image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

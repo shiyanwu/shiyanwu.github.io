@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://shiyanwu.github.io/freebyte/tags/java8-lambda/"/>
+  
+  <link rel="canonical" href="https://shiyanwu.github.io/freebyte/2023/08/03/6.java8-时间api/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：Java8 Lambda - freebyte</title>
-  <meta name="keywords" content="null">
+  <title>java8 时间API - freebyte</title>
+  <meta name="keywords" content="Java8,null">
   <meta desc name="description" content="自由处在！ - 莱羊 - freebyte">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="freebyte">
-<meta property="og:url" content="https://shiyanwu.github.io/freebyte/tags/Java8-Lambda/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java8 时间API">
+<meta property="og:url" content="https://shiyanwu.github.io/freebyte/2023/08/03/6.Java8-%E6%97%B6%E9%97%B4API/index.html">
 <meta property="og:site_name" content="freebyte">
-<meta property="og:description" content="自由处在！">
+<meta property="og:description" content="时间API在Java 8版之前，如果我们想格式化日期，必须使用SimpleDateFormat类，用它格式化输入的日期类。Java 8引入了新的Date-Time API(JSR 310)来改进时间、日期的处理。时间和日期的管理一直是最令Java开发者痛苦的问题。java.util.Date和后来的java.util.Calendar一直没有解决这个问题（甚至令开发者更加迷茫）。 因为上面这些原因">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-08-03T10:34:40.000Z">
+<meta property="article:modified_time" content="2023-08-03T06:39:15.242Z">
 <meta property="article:author" content="莱羊">
+<meta property="article:tag" content="Java8">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2630,7 +2633,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2678,25 +2681,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://shiyanwu.github.io/freebyte/2023/08/03/2.Java8-Lambda/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://shiyanwu.github.io/freebyte/2023/08/03/6.Java8-时间API/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="freebyte">
   </span>
@@ -2705,72 +2692,172 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="自由处在！">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/03/2.Java8-Lambda/"  itemprop="url">
-        java8 Lambda
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      <h2 id="Java8-Lambda表达式"><a href="#Java8-Lambda表达式" class="headerlink" title="Java8-Lambda表达式"></a>Java8-Lambda表达式</h2><h3 id="1-Lambda表达式的使用"><a href="#1-Lambda表达式的使用" class="headerlink" title="1. Lambda表达式的使用"></a>1. Lambda表达式的使用</h3><p>Lambda表达式（也称为闭包）是Java 8中最大和最令人期待的语言改变。它允许我们将函数当成参数传递给某个方法，或者把代码本身当作数据处理：函数式开发者非常熟悉这些概念。很多JVM平台上的语言（Groovy、Scala等）从诞生之日就支持Lambda表达式，但是Java开发者没有选择，只能使用匿名内部类代替Lambda表达式。</p>
+    
+      <h1 class="title" itemprop="name headline">
+        java8 时间API
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">莱羊</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Java8%E6%96%B0%E7%89%B9%E6%80%A7/">Java8新特性</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Java8%E6%96%B0%E7%89%B9%E6%80%A7/" itemprop="url"><span itemprop="name">Java8新特性</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png">
-            <meta itemprop="name" content="莱羊">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-03T18:34:40+08:00">2023-08-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java8%E6%96%B0%E7%89%B9%E6%80%A7/">Java8新特性</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Java8%E6%96%B0%E7%89%B9%E6%80%A7/" itemprop="url"><span itemprop="name">Java8新特性</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-03T18:34:40+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年8月3日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：707 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：3 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="时间API"><a href="#时间API" class="headerlink" title="时间API"></a>时间API</h2><p>在Java 8版之前，如果我们想格式化日期，必须使用SimpleDateFormat类，用它格式化输入的日期类。Java 8引入了新的Date-Time API(JSR 310)来改进时间、日期的处理。时间和日期的管理一直是最令Java开发者痛苦的问题。java.util.Date和后来的java.util.Calendar一直没有解决这个问题（甚至令开发者更加迷茫）。</p>
+<p>因为上面这些原因，诞生了第三方库Joda-Time，可以替代Java的时间管理API。Java 8中新的时间和日期管理API深受Joda-Time影响，并吸收了很多Joda-Time的精华。新的java.time包包含了所有关于日期、时间、时区、Instant（跟日期类似但是精确到纳秒）、duration（持续时间）和时钟操作的类。新设计的API认真考虑了这些类的不变性（从java.util.Calendar吸取的教训，为线程安全的），如果某个实例需要修改，则返回一个新的对象。</p>
+<p>我们接下来看看java.time包中的关键类和各自的使用例子，而更多的情况则参考java8的api。</p>
+<h3 id="1-Clock类"><a href="#1-Clock类" class="headerlink" title="1.Clock类"></a>1.Clock类</h3><p>首先，Clock类使用时区来返回当前的纳秒时间和日期。Clock可以替代**System.currentTimeMillis()<strong>和</strong>TimeZone.getDefault()**。</p>
+<h3 id="2-LocalDate和LocalTime类"><a href="#2-LocalDate和LocalTime类" class="headerlink" title="2.LocalDate和LocalTime类"></a>2.LocalDate和LocalTime类</h3><p>LocalDate仅仅包含ISO-8601日历系统中的日期部分；LocalTime则仅仅包含该日历系统中的时间部分。这两个类的对象都可以使用Clock对象构建得到。</p>
+<h3 id="3-LocalDateTime类"><a href="#3-LocalDateTime类" class="headerlink" title="3.LocalDateTime类"></a>3.LocalDateTime类</h3><p>LocalDateTime类包含了LocalDate和LocalTime的信息，但是不包含ISO-8601日历系统中的时区信息。</p>
+<h3 id="4-ZoneDateTime类"><a href="#4-ZoneDateTime类" class="headerlink" title="4.ZoneDateTime类"></a>4.ZoneDateTime类</h3><p>如果你需要特定时区的data&#x2F;time信息，则可以使用ZoneDateTime，它保存有ISO-8601日期系统的日期和时间，而且有时区信息。</p>
+<h3 id="5-Duration类"><a href="#5-Duration类" class="headerlink" title="5.Duration类"></a>5.Duration类</h3><p>Duration类，它持有的时间精确到秒和纳秒。这使得我们可以很容易得计算两个日期之间的不同。</p>
+<p>以下是例子的详细说明：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">package</span> com.ehking.example.java8.newfeature.demo06;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.time.Clock;</span><br><span class="line"><span class="keyword">import</span> java.time.Duration;</span><br><span class="line"><span class="keyword">import</span> java.time.LocalDate;</span><br><span class="line"><span class="keyword">import</span> java.time.LocalDateTime;</span><br><span class="line"><span class="keyword">import</span> java.time.LocalTime;</span><br><span class="line"><span class="keyword">import</span> java.time.Month;</span><br><span class="line"><span class="keyword">import</span> java.time.ZoneId;</span><br><span class="line"><span class="keyword">import</span> java.time.ZonedDateTime;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * java8 测试datetime api</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Java8DateTimeAPI</span> &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * Clock类</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">final</span> <span class="type">Clock</span> <span class="variable">clock</span> <span class="operator">=</span> Clock.systemUTC();</span><br><span class="line">        System.out.println(clock.instant());</span><br><span class="line">        System.out.println(clock.millis());</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * LocalDate类</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">final</span> <span class="type">LocalDate</span> <span class="variable">date</span> <span class="operator">=</span> LocalDate.now();</span><br><span class="line">        <span class="keyword">final</span> <span class="type">LocalDate</span> <span class="variable">dateFromClock</span> <span class="operator">=</span> LocalDate.now(clock);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        System.out.println(date);</span><br><span class="line">        System.out.println(dateFromClock);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * LocalTime类</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">final</span> <span class="type">LocalTime</span> <span class="variable">time</span> <span class="operator">=</span> LocalTime.now();</span><br><span class="line">        <span class="keyword">final</span> <span class="type">LocalTime</span> <span class="variable">timeFromClock</span> <span class="operator">=</span> LocalTime.now(clock);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        System.out.println(time);</span><br><span class="line">        System.out.println(timeFromClock);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * ZonedDateTime类</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">final</span> <span class="type">ZonedDateTime</span> <span class="variable">zonedDatetime</span> <span class="operator">=</span> ZonedDateTime.now();</span><br><span class="line">        <span class="keyword">final</span> <span class="type">ZonedDateTime</span> <span class="variable">zonedDatetimeFromClock</span> <span class="operator">=</span> ZonedDateTime.now(clock);</span><br><span class="line">        <span class="keyword">final</span> <span class="type">ZonedDateTime</span> <span class="variable">zonedDatetimeFromZone</span> <span class="operator">=</span> ZonedDateTime.now(ZoneId.of(<span class="string">&quot;America/Los_Angeles&quot;</span>));</span><br><span class="line"></span><br><span class="line">        System.out.println(zonedDatetime);</span><br><span class="line">        System.out.println(zonedDatetimeFromClock);</span><br><span class="line">        System.out.println(zonedDatetimeFromZone);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * Duration类</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">final</span> <span class="type">LocalDateTime</span> <span class="variable">from</span> <span class="operator">=</span> LocalDateTime.of(<span class="number">2014</span>, Month.APRIL, <span class="number">16</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line">        <span class="keyword">final</span> <span class="type">LocalDateTime</span> <span class="variable">to</span> <span class="operator">=</span> LocalDateTime.of(<span class="number">2015</span>, Month.APRIL, <span class="number">16</span>, <span class="number">23</span>, <span class="number">59</span>, <span class="number">59</span>);</span><br><span class="line">        <span class="keyword">final</span> <span class="type">Duration</span> <span class="variable">duration</span> <span class="operator">=</span> Duration.between(from, to);</span><br><span class="line">        System.out.println(<span class="string">&quot;Duration in days: &quot;</span> + duration.toDays());</span><br><span class="line">        System.out.println(<span class="string">&quot;Duration in hours: &quot;</span> + duration.toHours());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2023/08/03/2.Java8-Lambda/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-03T14:39:15+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年8月3日</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
-    
-  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java8/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Java8</p></a></div>
+  <span hidden itemprop="keywords">Java8</span>
 
 
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
     
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2023/08/03/8.Java8-%E5%B9%B6%E8%A1%8C/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Java8 并行</p>
+          <p class='content'>并行数组排序Stream都有两种模式：顺序执行和并行执行。比如：
+123List &lt;Person&gt; people = list.getStream.collect(Collector...</p>
+        </a>
+      
+      
+        <a class='next' href='/2023/08/03/7.Java8-Nashorn%20JavaScript%E5%BC%95%E6%93%8E/'>
+          <p class='title'>Java8 Nashorn JavaScript引擎<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Nashorn JavaScript引擎Java 8提供了新的Nashorn JavaScript引擎，使得我们可以在JVM上开发和运行JS应用。Nashorn JavaScript引擎是jav...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2779,134 +2866,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">freebyte</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Java8%E6%96%B0%E7%89%B9%E6%80%A7/" href="/categories/Java8%E6%96%B0%E7%89%B9%E6%80%A7/"
-            active-action="action-categoriesJava8E696B0E789B9E680A7"
-            ><div class='name'>Java8新特性</div><div class='badge'>(12)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Java8/" style="font-size: 24px; color: #555">Java8</a> <a href="/tags/Java8-Lambda/" style="font-size: 14px; color: #999">Java8 Lambda</a> <a href="/tags/java8/" style="font-size: 14px; color: #999">java8</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E9%97%B4API"><span class="toc-text">时间API</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Clock%E7%B1%BB"><span class="toc-text">1.Clock类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-LocalDate%E5%92%8CLocalTime%E7%B1%BB"><span class="toc-text">2.LocalDate和LocalTime类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-LocalDateTime%E7%B1%BB"><span class="toc-text">3.LocalDateTime类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-ZoneDateTime%E7%B1%BB"><span class="toc-text">4.ZoneDateTime类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Duration%E7%B1%BB"><span class="toc-text">5.Duration类</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2934,13 +2935,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -4082,7 +4084,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"freebyte","url":"https://shiyanwu.github.io/freebyte/","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"莱羊","image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://shiyanwu.github.io/freebyte/","sameAs":["https://github.com/shiyanwu"],"description":"自由处在！"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://shiyanwu.github.io/freebyte/","name":"freebyte"}},{"@type":"ListItem","position":2,"item":{"@id":"https://shiyanwu.github.io/freebyte/tags/Java8 Lambda/","name":"Java8 Lambda"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"freebyte","url":"https://shiyanwu.github.io/freebyte/","keywords":null,"description":"自由处在！","author":{"@type":"Person","name":"莱羊","image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://shiyanwu.github.io/freebyte/","description":"自由处在！"},"publisher":{"@type":"Organization","name":"freebyte","url":"https://shiyanwu.github.io/freebyte/","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://shiyanwu.github.io/freebyte?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"自由处在！","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"莱羊","image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://shiyanwu.github.io/freebyte/"},"publisher":{"@type":"Organization","name":"freebyte","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"freebyte","url":"https://shiyanwu.github.io/freebyte/","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"莱羊","image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://shiyanwu.github.io/freebyte/","sameAs":["https://github.com/shiyanwu"],"description":"自由处在！"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://shiyanwu.github.io/freebyte/","name":"freebyte"}},{"@type":"ListItem","position":2,"item":{"@id":"https://shiyanwu.github.io/freebyte/categories/Java8新特性/","name":"Java8新特性"}},{"@type":"ListItem","position":3,"item":{"@id":"https://shiyanwu.github.io/freebyte/2023/08/03/6.Java8-时间API/","name":"java8 时间API"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"freebyte","url":"https://shiyanwu.github.io/freebyte/","keywords":null,"description":"自由处在！","author":{"@type":"Person","name":"莱羊","image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://shiyanwu.github.io/freebyte/","description":"自由处在！"},"publisher":{"@type":"Organization","name":"freebyte","url":"https://shiyanwu.github.io/freebyte/","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://shiyanwu.github.io/freebyte?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"java8 时间API","description":"自由处在！","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://shiyanwu.github.io/freebyte/2023/08/03/6.Java8-%E6%97%B6%E9%97%B4API/"},"author":{"@type":"Person","name":"莱羊","image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://shiyanwu.github.io/freebyte/"},"publisher":{"@type":"Organization","name":"freebyte","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://shiyanwu.github.io/freebyte/2023/08/03/6.Java8-%E6%97%B6%E9%97%B4API/","wordCount":0,"datePublished":"2023-08-03T10:34:40.000Z","dateModified":"2023-08-03T06:39:15.242Z","articleSection":"Java8新特性","keywords":"Java8","image":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
