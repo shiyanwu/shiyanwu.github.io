@@ -1909,7 +1909,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1692770228505),
+    lastupdate: new Date(1692783021135),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -1934,8 +1934,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       },
       
       
-      
-      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","hr","menus.prevNext","hr","menus.links","hr","menus.darkMode","hr","plugins.articlePage","hr","music"],"options":{"iconPrefix":"fa-duotone PETERRIVE","articleShowLink":true,"musicAlwaysShow":true},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-duotone fa-arrow-left PETERRIVE","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-duotone fa-arrow-right PETERRIVE","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-duotone fa-redo PETERRIVE","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-duotone fa-arrow-up PETERRIVE","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-duotone PETERRIVE fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-duotone PETERRIVE fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-duotone PETERRIVE fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-duotone PETERRIVE fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-duotone PETERRIVE fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-duotone PETERRIVE fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-duotone PETERRIVE fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-duotone PETERRIVE fa-link","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-duotone PETERRIVE fa-image","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-duotone PETERRIVE fa-images","event":"window.open(`https://www.google.com/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-duotone fa-print TURQUOISE","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-duotone fa-book-open EMERALD","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"help","name":"常见问题","icon":"fa-solid fa-question","link":"https://volantis.js.org/faqs/","group":"link"},{"id":"examples","name":"示例博客","icon":"fa-solid fa-rss","link":"https://volantis.js.org/examples/","group":"link"},{"id":"contributors","name":"加入社区","icon":"fa-solid fa-fan","link":"https://volantis.js.org/contributors/","group":"link"},"hr",{"id":"source_docs","name":"本站源码","icon":"fa-solid fa-code-branch","link":"https://github.com/volantis-x/volantis-docs/","group":"link"},{"id":"source_theme","name":"主题源码","icon":"fa-solid fa-code-branch","link":"https://github.com/volantis-x/hexo-theme-volantis/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-duotone fa-eclipse-alt WISTERIA","event":"volantis.dark.toggle()","group":"darkMode"}],"links":[{"id":"help","name":"常见问题","icon":"fa-duotone fa-question EMERALD","link":"/faqs/","group":"link"},{"id":"examples","name":"示例博客","icon":"fa-duotone fa-rss PETERRIVE","link":"/examples/","group":"link"},{"id":"contributors","name":"加入社区","icon":"fa-duotone fa-fan fa-spin AMETHYST","link":"/contributors/","group":"link"},"hr",{"id":"source_docs","name":"本站源码","icon":"fa-duotone fa-code-branch WETASPHALT","link":"https://github.com/volantis-x/volantis-docs/","group":"link"},{"id":"source_theme","name":"主题源码","icon":"fa-duotone fa-code-branch CONCRETE","link":"https://github.com/volantis-x/hexo-theme-volantis/","group":"link"}],"prevNext":[{"id":"prev","name":"查看上一篇","icon":"fa-duotone fa-angles-left PETERRIVE","event":"volantis.rightmenu.jump('prev')","group":"prevNext"},{"id":"next","name":"查看下一篇","icon":"fa-duotone fa-angles-right PETERRIVE","event":"volantis.rightmenu.jump('next')","group":"prevNext"}]}}
       
     }
   }
@@ -2853,15 +2851,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/08/03/3.Java8-Optional/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Java8 Optional类</p>
-          <p class='content'>Optional类Java 8在java.util包中新增了Optional类，Optional类是一个可以包含或不可以包含非空值的容器对象。每一个Java项目，最主要的重复语句就是检查空指针异...</p>
+        <a class='prev' href='/2023/08/03/2.Java8-Lambda/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>java8 Lambda</p>
+          <p class='content'>Java8-Lambda表达式1. Lambda表达式的使用Lambda表达式（也称为闭包）是Java 8中最大和最令人期待的语言改变。它允许我们将函数当成参数传递给某个方法，或者把代码本身当作...</p>
         </a>
       
       
-        <a class='next' href='/2023/08/03/6.Java8-%E6%97%B6%E9%97%B4API/'>
-          <p class='title'>java8 时间API<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>时间API在Java 8版之前，如果我们想格式化日期，必须使用SimpleDateFormat类，用它格式化输入的日期类。Java 8引入了新的Date-Time API(JSR 310)来改进...</p>
+        <a class='next' href='/2023/08/03/3.Java8-Optional/'>
+          <p class='title'>Java8 Optional类<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Optional类Java 8在java.util包中新增了Optional类，Optional类是一个可以包含或不可以包含非空值的容器对象。每一个Java项目，最主要的重复语句就是检查空指针异...</p>
         </a>
       
     </div>
@@ -2945,6 +2943,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- pjax占位 -->
   </div>
 
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
   <!-- Custom Files side begin -->
   
   <!-- Custom Files side end -->
@@ -2985,30 +2991,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <footer class="footer clearfix"  itemscope itemtype="http://schema.org/WPFooter">
     <br><br>
-    
-      
-        <div class="aplayer-container">
-          
-
-  
-    <meting-js
-      theme='#1BCDFC'
-      autoplay='false'
-      volume='0.7'
-      loop='all'
-      order='list'
-      fixed='false'
-      list-max-height='320px'
-      server='netease'
-      type='playlist'
-      id='3175833810'
-      list-folded='true'>
-    </meting-js>
-  
-
-
-        </div>
-      
     
       
         <br>
@@ -3102,412 +3084,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="rightmenu-wrapper">
-  <ul class="list-v rightmenu" id="rightmenu-content">
-    
-  <li class='navigation menuNavigation-Content'>
-
-
-    <a class="nav icon-only fix-cursor-default" onclick="history.back()"><i class="fa-duotone fa-arrow-left PETERRIVE fa-fw"></i></a>
-
-
-
-    <a class="nav icon-only fix-cursor-default" onclick="history.forward()"><i class="fa-duotone fa-arrow-right PETERRIVE fa-fw"></i></a>
-
-
-
-    <a class="nav icon-only fix-cursor-default" onclick="window.location.reload()"><i class="fa-duotone fa-redo PETERRIVE fa-fw"></i></a>
-
-
-
-    <a class="nav icon-only fix-cursor-default" onclick="VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)"><i class="fa-duotone fa-arrow-up PETERRIVE fa-fw"></i></a>
-
-
-  </li>
-
-
-    <hr class="menuLoad-Content" >
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyPaste" data-event="copyPaste" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-paste fa-fw"></i>
-      粘贴文本
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyAll" data-event="copyAll" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-object-ungroup fa-fw"></i>
-      全选文本
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyCut" data-event="copyCut" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-cut fa-fw"></i>
-      剪切文本
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyText" data-event="copyText" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-copy fa-fw"></i>
-      复制文本
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="searchWord" data-event="OpenSearch(__text__)" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-search fa-fw"></i>
-      站内搜索
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="bingSearch" data-event="window.open(`https://cn.bing.com/search?q=${__text__}`)" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-search fa-fw"></i>
-      必应搜索
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="openTab" data-event="window.open(__link__)" data-group="elementCheck">
-      <i class="fa-duotone PETERRIVE fa-external-link-square-alt fa-fw"></i>
-      新标签页打开
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyLink" data-event="copyLink" data-group="elementCheck">
-      <i class="fa-duotone PETERRIVE fa-link fa-fw"></i>
-      复制链接地址
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyImg" data-event="copyImg" data-group="elementImage">
-      <i class="fa-duotone PETERRIVE fa-image fa-fw"></i>
-      复制图片
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="googleImg" data-event="window.open(`https://www.google.com/searchbyimage?image_url=${__link__}`)" data-group="elementImage">
-      <i class="fa-duotone PETERRIVE fa-images fa-fw"></i>
-      谷歌识图
-    </span>
-  </li>
-
-
-
-    <hr class="menuLoad-Content" >
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="prev" data-event="volantis.rightmenu.jump('prev')" data-group="prevNext">
-      <i class="fa-duotone fa-angles-left PETERRIVE fa-fw"></i>
-      查看上一篇
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="next" data-event="volantis.rightmenu.jump('next')" data-group="prevNext">
-      <i class="fa-duotone fa-angles-right PETERRIVE fa-fw"></i>
-      查看下一篇
-    </span>
-  </li>
-
-
-
-    <hr class="menuLoad-Content" >
-
-
-
-  <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="help" href="/faqs/" data-group="link">
-      <i class="fa-duotone fa-question EMERALD fa-fw"></i>
-      常见问题
-    </a>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="examples" href="/examples/" data-group="link">
-      <i class="fa-duotone fa-rss PETERRIVE fa-fw"></i>
-      示例博客
-    </a>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="contributors" href="/contributors/" data-group="link">
-      <i class="fa-duotone fa-fan fa-spin AMETHYST fa-fw"></i>
-      加入社区
-    </a>
-  </li>
-
-
-
-    <hr class="menuLoad-Content" >
-
-
-
-  <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="source_docs" target="_blank" rel="noopener" href="https://github.com/volantis-x/volantis-docs/" data-group="link">
-      <i class="fa-duotone fa-code-branch WETASPHALT fa-fw"></i>
-      本站源码
-    </a>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="source_theme" target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/" data-group="link">
-      <i class="fa-duotone fa-code-branch CONCRETE fa-fw"></i>
-      主题源码
-    </a>
-  </li>
-
-
-
-    <hr class="menuLoad-Content" >
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="darkMode" data-event="volantis.dark.toggle()" data-group="darkMode">
-      <i class="fa-duotone fa-eclipse-alt WISTERIA fa-fw"></i>
-      暗黑模式
-    </span>
-  </li>
-
-
-
-    <hr class="menuLoad-Content" >
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="printMode" data-event="printMode" data-group="articlePage">
-      <i class="fa-duotone fa-print TURQUOISE fa-fw"></i>
-      打印页面
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="readMode" data-event="readMode" data-group="articlePage">
-      <i class="fa-duotone fa-book-open EMERALD fa-fw"></i>
-      阅读模式
-    </span>
-  </li>
-
-
-
-    <hr class="menuLoad-Content" >
-
-
-<div id="menuMusic">
-  <li class='music name menuOption-Content'>
-    <p class='nav music-title fix-cursor-default'></p>
-  </li>
-  <li class='music ctrl'>
-    <a class='nav icon-only backward fix-cursor-default' href="/" onclick="return false;" title="backward">
-      <i class='fa-duotone PETERRIVE fa-step-backward fa-fw'></i>
-    </a>
-    <a class='nav icon-only toggle fix-cursor-default' href="/" onclick="return false;" title="toggle">
-      <i class='fa-duotone PETERRIVE fa-play fa-fw'></i>
-    </a>
-    <a class='nav icon-only forward fix-cursor-default' href="/" onclick="return false;" title="forward">
-      <i class='fa-duotone PETERRIVE fa-step-forward fa-fw'></i>
-    </a>
-  </li>
-  <li class='music volume'>
-    <div class='nav volume'>
-      <div class="aplayer-volume-bar-wrap">
-        <div class="aplayer-volume-bar fix-cursor-pointer">
-          <div class="aplayer-volume"></div>
-          <i class='left fa-duotone PETERRIVE fa-volume-off fa-fw'></i>
-          <i class='right fa-duotone PETERRIVE fa-volume-up fa-fw'></i>
-        </div>
-      </div>
-    </div>
-  </li>
-</div>
-
-  </ul>
-</div>
-<script src="/js/plugins/rightMenus.js"></script>
-<script>
-  const RightMenusFunction = {};
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  //RightMenusFunction['copyPaste'] = (fun) => {fun()}
-
-
-
-
-
-  //RightMenusFunction['copyAll'] = (fun) => {fun()}
-
-
-
-
-
-  //RightMenusFunction['copyCut'] = (fun) => {fun()}
-
-
-
-
-
-  //RightMenusFunction['copyText'] = (fun) => {fun()}
-
-
-
-
-
-  RightMenusFunction['searchWord'] = (__text__) => {OpenSearch(__text__)}
-
-
-
-
-
-  RightMenusFunction['bingSearch'] = (__text__) => {window.open(`https://cn.bing.com/search?q=${__text__}`)}
-
-
-
-
-
-  RightMenusFunction['openTab'] = (__link__) => {window.open(__link__)}
-
-
-
-
-
-  //RightMenusFunction['copyLink'] = (fun) => {fun()}
-
-
-
-
-
-  //RightMenusFunction['copyImg'] = (fun) => {fun()}
-
-
-
-
-
-  RightMenusFunction['googleImg'] = (__link__) => {window.open(`https://www.google.com/searchbyimage?image_url=${__link__}`)}
-
-
-
-
-
-
-
-  RightMenusFunction['prev'] = () => {volantis.rightmenu.jump('prev')}
-
-
-
-
-
-  RightMenusFunction['next'] = () => {volantis.rightmenu.jump('next')}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  RightMenusFunction['darkMode'] = () => {volantis.dark.toggle()}
-
-
-
-
-
-
-
-  //RightMenusFunction['printMode'] = (fun) => {fun()}
-
-
-
-
-
-  //RightMenusFunction['readMode'] = (fun) => {fun()}
-
-
-
-
-
-
-
-</script>
 
 
 
@@ -3715,9 +3291,6 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     // APlayer 需要在  MetingJS 之前加载
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/aplayer/dist/APlayer.min.js")
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
-  
-    // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('/js/plugins/aplayer.js')
   
   })();
 
