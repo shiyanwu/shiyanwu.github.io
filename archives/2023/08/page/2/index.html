@@ -1906,7 +1906,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1691044901355),
+    lastupdate: new Date(1692770228505),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2688,7 +2688,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://shiyanwu.github.io/freebyte/2023/08/03/6.Java8-时间API/">
+  <link itemprop="mainEntityOfPage" href="https://shiyanwu.github.io/freebyte/2023/08/03/5.Java8-方法引用/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="freebyte">
   </span>
@@ -2706,16 +2706,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/03/6.Java8-%E6%97%B6%E9%97%B4API/"  itemprop="url">
-        java8 时间API
+      <a href="/2023/08/03/5.Java8-%E6%96%B9%E6%B3%95%E5%BC%95%E7%94%A8/"  itemprop="url">
+        java8 方法引用
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        时间API在Java 8版之前，如果我们想格式化日期，必须使用SimpleDateFormat类，用它格式化输入的日期类。Java 8引入了新的Date-Time API(JSR 310)来改进时间、日期的处理。时间和日期的管理一直是最令Java开发者痛苦的问题。java.util.Date和后来的java.util.Calendar一直没有解决这个问题（甚至令开发者更加迷茫）。
-因为上面这...
+        五.方法引用方法引用使得开发者可以直接引用现存的方法、Java类的构造方法或者实例对象。方法引用和Lambda表达式配合使用，使得java类的构造方法看起来紧凑而简洁，没有很多复杂的模板代码。
+
+语法：如果是静态方法，则是ClassName::methodName。如 Object ::equals如果是实例方法，则是Instance::methodName。如Object obj&#x3D...
       
     
   </div>
@@ -2744,7 +2745,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       </div>
       
         <div>
-          <a class='readmore' href='/2023/08/03/6.Java8-%E6%97%B6%E9%97%B4API/' itemprop="url">
+          <a class='readmore' href='/2023/08/03/5.Java8-%E6%96%B9%E6%B3%95%E5%BC%95%E7%94%A8/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2760,7 +2761,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://shiyanwu.github.io/freebyte/2023/08/03/7.Java8-Nashorn JavaScript引擎/">
+  <link itemprop="mainEntityOfPage" href="https://shiyanwu.github.io/freebyte/2023/08/03/9.Java8-注解/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="freebyte">
   </span>
@@ -2778,16 +2779,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/03/7.Java8-Nashorn%20JavaScript%E5%BC%95%E6%93%8E/"  itemprop="url">
-        Java8 Nashorn JavaScript引擎
+      <a href="/2023/08/03/9.Java8-%E6%B3%A8%E8%A7%A3/"  itemprop="url">
+        Java8 注解
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        Nashorn JavaScript引擎Java 8提供了新的Nashorn JavaScript引擎，使得我们可以在JVM上开发和运行JS应用。Nashorn JavaScript引擎是javax.script.ScriptEngine的另一个实现版本，这类Script引擎遵循相同的规则，允许Java和JavaScript交互使用，例子代码如下：
-123456789101112131415...
+        注解1.重复注解自从Java 5中引入注解以来，这个特性开始变得非常流行，并在各个框架和项目中被广泛使用。不过，注解有一个很大的限制是：在同一个地方不能多次使用同一个注解。Java 8打破了这个限制，引入了重复注解的概念，允许在同一个地方多次使用同一个注解。 在Java 8中使用@Repeatable注解定义重复注解，实际上，这并不是语言层面的改进，而是编译器做的一个trick，底层的技术仍...
       
     
   </div>
@@ -2816,7 +2816,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       </div>
       
         <div>
-          <a class='readmore' href='/2023/08/03/7.Java8-Nashorn%20JavaScript%E5%BC%95%E6%93%8E/' itemprop="url">
+          <a class='readmore' href='/2023/08/03/9.Java8-%E6%B3%A8%E8%A7%A3/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2971,7 +2971,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-      <a href="/tags/Java8/" style="font-size: 24px; color: #555">Java8</a> <a href="/tags/Java8-Lambda/" style="font-size: 14px; color: #999">Java8 Lambda</a> <a href="/tags/java8/" style="font-size: 14px; color: #999">java8</a>
+      <a href="/tags/Java8/" style="font-size: 14px; color: #999">Java8</a>
     </div>
   </section>
 
